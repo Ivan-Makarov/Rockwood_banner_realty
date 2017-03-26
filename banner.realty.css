@@ -1,159 +1,222 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 
-.credit.banner {
-	display : block !important;
-	position : relative;
-	width : 100% !important;
-	margin : 25px 0 10px 0 !important;
-	background : inherit;
-	color : #ffffff;
-	}
+.realty.banner {
+	display: block !important;
+	position: relative;
+	width: 100% !important;
+	margin: 25px 0 10px !important;
+	background: inherit;
+	color: #ffffff;
+}
 
-.credit.banner > a {
-	display : inherit;
-	position : inherit;
-	background : inherit;
-	color : inherit;
-	text-decoration : none;
-	}
+.realty.banner > a {
+	display: inherit;
+	position: inherit;
+	background: inherit;
+	color: inherit;
+	text-decoration: none;
+}
 
-.credit.banner > a > div {
-	position : relative;
-	padding : 10px 20px;
-	box-sizing : border-box;
-	}
-	
-.credit.banner > a > div > ul { padding : 0 15px; }
-.credit.banner > a > div > ul > li > sup { font : normal 12px/12px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif; }
-	
-.credit.banner p.small { 
-	margin : 0 !important;
-	padding : 0 !important;
-	font : normal 12px/14px 'RobotoLight', Arial, Tahoma, Verdana, sans-serif !important;
-	text-align : left !important;
-	}
-	
-.credit.banner > a > div.green { background : #00aa00; }
-.credit.banner > a > div.gray { background : #bbbbbb; }
-.credit.banner > a > div.orange { background : #ffaa00 url('bg.png') 50% 90% no-repeat; }
+.realty.banner > a > div {
+	position: relative;
+	padding: 10px 20px;
+	box-sizing: border-box;
+}
 
-.credit.banner > a > div.gray > p { 
-	font-family : 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif;
-	text-align : center; 
-	}
+.realty.banner > a > div.gray {
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+}
 
-.credit.banner > a > div.green > span,
-.credit.banner > a > div.orange > p {
-	display : block;
-	text-transform : uppercase;
+.realty.banner > a > div.green {
+	background: #00aa00;
+}
+
+.realty.banner > a > div.gray {
+	background: #bbbbbb;
+}
+
+.realty.banner > a > div.orange {
+	background: #ffaa00 url('img/houses.png') no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.realty.banner > a > div.orange {
+		background-image: url('img/houses2x.png');
 	}
-	
-.credit.banner > a > div.gray > div.plate {
-	width : 100%;
-	padding : 10px 0;
-	margin : 15px 0;
-	box-sizing : border-box;
-	border-top : solid 1px #ffffff;
-	}
+}
+
+.realty.banner > a > div.green > span,
+.realty.banner > a > div.orange > p {
+	display: block;
+}
+
+.realty.banner > a > div.green > span {
+	text-transform: uppercase;
+}
+
+.realty.banner > a > div.gray > div.gray-flex {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.realty.banner > a > div.gray > div > div.banner-button {
+	background: #00aa00;
+	margin: 0 auto;
+	color: #ffffff;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.realty.banner > a > div.gray > div > div.banner-button:hover {
+	background: #ffaa00;
+}
 
 /* big */
-.credit.banner.big,
-.credit.banner.big > a > div { height : 300px; }
-	
-.credit.banner.big > a > div.orange,
-.credit.banner.big > a > div.gray {
-	display : inline-block;
-	vertical-align : top;
-	}
-	
-.credit.banner.big > a > div.green {
-	position : absolute;
-	top : 0;
-	left : 0;
-	z-index : 10;
-	width : 100px;
-	border-right : solid 5px #ffffff;
-	}
-	
-.credit.banner.big > a > div.green > span {
-	position : absolute;
-	bottom : 150px;
-	left : -55px;
-	z-index : 10;
-	width : 200px;
-	font : normal 22px/25px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif;
+.realty.banner.big {
+	font-size: 0;
+}
+
+.realty.banner.big,
+.realty.banner.big > a > div {
+	height: 280px;
+}
+
+.realty.banner.big > a > div.gray,
+.realty.banner.big > a > div.orange {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.realty.banner.big > a > div.green {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 55px;
+	border-right: solid 5px #ffffff;
+}
+
+.realty.banner.big > a > div.green > span {
+	position: absolute;
+	bottom: 130px;
+	left: -75px;
+	z-index: 10;
+	width: 200px;
+	font: normal 22px/25px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif;
 	transform: rotate(270deg);
-	}
-	
-.credit.banner.big > a > div.orange { 
-	width : 40%;
-	margin-left : 10%;
-	padding : 15px 0 0 40px;	
-	border-right : solid 5px #ffffff;
-	}
-	
-.credit.banner.big > a > div.orange > p { 
-	margin : 0;
-	padding : 0;
-	font : normal 22px/28px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif; 
-	}
-	
-.credit.banner.big > a > div.orange > p > sup { font : normal 14px/14px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif; }
-.credit.banner.big > a > div > ul { margin : 10px 0 15px 0; }
-.credit.banner.big > a > div > ul > li > strong { font : normal 20px/24px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif; }
-	
-.credit.banner.big > a > div.gray { width : 50%; }
+}
 
-.credit.banner.big > a > div.gray > p > span {
-	display : block;
-	margin : 0 10px;
-	font : normal 14px/16px 'RobotoLight', Arial, Tahoma, Verdana, sans-serif;
-	}
-	
-/* medium */	
-.credit.banner.medium > a > div.green > span {
-	font : normal 20px/20px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif;
-	text-align : center;
-	}
-	
-.credit.banner.medium > a > div.orange { 
-	padding : 20px 0 100px 20px;
-	background-size : 40% auto;
-	}
-	
-.credit.banner.medium > a > div.orange > p { 
-	margin : 0;
-	padding : 0;
-	font : normal 22px/28px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif; 
-	}
-	
-.credit.banner.medium > a > div.orange > p > sup { font : normal 14px/14px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif; }
-.credit.banner.medium > a > div > ul > li > strong { font : normal 20px/24px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif; }
+.realty.banner.big > a > div.orange {
+	width: 45%;
+	margin-left: 5%;
+	padding: 15px 40px 0 40px;
+	border-right: solid 5px #ffffff;
+	background-position: bottom 22px left 50%;
+}
 
-.credit.banner.medium > a > div.gray { 
-	padding : 5px 20px 5px 20px;
-	}
+.realty.banner.big > a > div.orange > p {
+	margin: 0;
+	padding: 0;
+	font: normal 26px/32px 'RobotoBold', Arial, Tahoma, Verdana, sans-serif;
+}
 
+.realty.banner.big > a > div > div > ul {
+	margin: 10px 0 0;
+	font: normal 18px/22px 'RobotoBold', Arial, Tahoma, Verdana, sans-serif;
+}
+
+.realty.banner.big > a > div > div > ul > li {
+	margin-bottom: 20px;
+}
+
+.realty.banner.big > a > div.gray {
+	width: 50%;
+}
+
+.realty.banner > a > div > div > ul {
+	padding: 0 38px 15px;
+}
+
+.realty.banner.big > a > div.gray > div > div.banner-button {
+	font: normal 18px/51px 'RobotoBold', Arial, Tahoma, Verdana, sans-serif;
+	border: 20px solid #ffffff;
+}
+
+/* medium */
+.realty.banner.medium > a > div.green > span {
+	font: normal 20px/20px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif;
+	text-align: center;
+}
+
+.realty.banner.medium > a > div.orange {
+	padding: 20px 0 100px 20px;
+	background-size: 40% auto;
+	background-position: bottom 15px right 20px;
+}
+
+.realty.banner.medium > a > div.orange > p {
+	margin: 0;
+	padding-right: 40%;
+	font: normal 22px/28px 'RobotoBold', Arial, Tahoma, Verdana, sans-serif;
+}
+
+.realty.banner.medium > a > div > div > ul {
+	margin: 0;
+	padding: 10px 17px 15px;
+	font: normal 18px/22px 'RobotoBold', Arial, Tahoma, Verdana, sans-serif;
+}
+
+.realty.banner.medium > a > div > div > ul > li {
+	margin-bottom: 10px;
+}
+
+.realty.banner.medium > a > div.gray {
+	padding: 5px 20px;
+}
+
+.realty.banner.medium > a > div.gray > div > div.banner-button {
+	font: normal 18px/51px 'RobotoBold', Arial, Tahoma, Verdana, sans-serif;
+	border: 10px solid #ffffff;
+	margin-bottom: 10px;
+}
 /* small */
-.credit.banner.small > a > div.green > span {
-	font : normal 20px/20px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif;
-	text-align : center;
-	}
-	
-.credit.banner.small > a > div.orange { 
-	padding : 20px 0 100px 20px;
-	background-size : 55% auto;
-	}
-	
-.credit.banner.small > a > div.orange > p { 
-	margin : 0;
-	padding : 0;
-	font : normal 18px/24px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif; 
-	}
-	
-.credit.banner.small > a > div.orange > p > sup { font : normal 14px/14px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif; }
-.credit.banner.small > a > div > ul > li > strong { font : normal 16px/20px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif; }
+.realty.banner.small > a > div.green > span {
+	font: normal 20px/20px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif;
+	text-align: center;
+}
 
-.credit.banner.small > a > div.gray { 
-	padding : 5px 20px 5px 20px;
-	}
+.realty.banner.small > a > div.orange {
+	padding: 20px 0 100px 20px;
+	background-size: 55% auto;
+	background-position: bottom 15px right 20px;
+}
+
+.realty.banner.small > a > div.orange > p {
+	margin: 0;
+	padding-right: 35%;
+	font: normal 18px/24px 'RobotoBold', Arial, Tahoma, Verdana, sans-serif;
+}
+
+.realty.banner.small > a > div.gray {
+	padding: 5px 20px;
+}
+
+.realty.banner.small > a > div > div > ul {
+	padding: 10px 17px 15px;
+	font: normal 18px/22px 'RobotoBold', Arial, Tahoma, Verdana, sans-serif;
+}
+
+.realty.banner.small > a > div > div > ul > li {
+	margin-bottom: 10px;
+}
+
+.realty.banner.small > a > div.gray > div > div.banner-button {
+	font: normal 18px/51px 'RobotoBold', Arial, Tahoma, Verdana, sans-serif;
+	border: 10px solid #ffffff;
+	margin-bottom: 10px;
+}
