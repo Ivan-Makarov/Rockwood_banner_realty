@@ -103,11 +103,11 @@
 
 .realty.banner.big > a > div.green > span {
 	position: absolute;
-	bottom: 130px;
-	left: -75px;
+	bottom: 135px;
+	left: -76px;
 	z-index: 10;
 	width: 200px;
-	font: normal 22px/25px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif;
+	font: normal 20px/28px 'RobotoRegular', Arial, Tahoma, Verdana, sans-serif;
 	transform: rotate(270deg);
 }
 
