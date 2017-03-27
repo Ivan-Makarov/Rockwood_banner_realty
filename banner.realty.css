@@ -63,7 +63,7 @@
 	justify-content: space-between;
 }
 
-.realty.banner > a > div.gray > div > div.banner-button {
+.realty.banner div.banner-button {
 	background: #00aa00;
 	margin: 0 auto;
 	color: #ffffff;
@@ -72,7 +72,7 @@
 	text-align: center;
 }
 
-.realty.banner > a > div.gray > div > div.banner-button:hover {
+.realty.banner:hover div.banner-button {
 	background: #ffaa00;
 }
 
@@ -167,7 +167,7 @@
 
 .realty.banner.medium > a > div > div > ul {
 	margin: 0;
-	padding: 10px 17px 15px;
+	padding: 10px 36px 15px;
 	font: normal 18px/22px 'RobotoBold', Arial, Tahoma, Verdana, sans-serif;
 }
 
@@ -175,14 +175,9 @@
 	margin-bottom: 10px;
 }
 
-.realty.banner.medium > a > div.gray {
-	padding: 5px 20px;
-}
-
 .realty.banner.medium > a > div.gray > div > div.banner-button {
 	font: normal 18px/51px 'RobotoBold', Arial, Tahoma, Verdana, sans-serif;
-	border: 10px solid #ffffff;
-	margin-bottom: 10px;
+	border: 15px solid #ffffff;
 }
 /* small */
 .realty.banner.small > a > div.green > span {
@@ -202,12 +197,8 @@
 	font: normal 18px/24px 'RobotoBold', Arial, Tahoma, Verdana, sans-serif;
 }
 
-.realty.banner.small > a > div.gray {
-	padding: 5px 20px;
-}
-
 .realty.banner.small > a > div > div > ul {
-	padding: 10px 17px 15px;
+	padding: 10px 36px 15px;
 	font: normal 18px/22px 'RobotoBold', Arial, Tahoma, Verdana, sans-serif;
 }
 
@@ -217,6 +208,5 @@
 
 .realty.banner.small > a > div.gray > div > div.banner-button {
 	font: normal 18px/51px 'RobotoBold', Arial, Tahoma, Verdana, sans-serif;
-	border: 10px solid #ffffff;
-	margin-bottom: 10px;
+	border: 15px solid #ffffff;
 }
